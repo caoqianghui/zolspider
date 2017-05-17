@@ -14,4 +14,11 @@ class ZolPhoneItem(scrapy.Item):
     title = scrapy.Field()
     price = scrapy.Field()
     p_url = scrapy.Field()
-    publish_time = scrapy.Field()
+    
+    parms_1 = scrapy.Field()
+    parms_2 = scrapy.Field()
+    parms_3 = scrapy.Field()
+    parms_4 = scrapy.Field()
+    parms_5 = scrapy.Field()
+    parms_6 = scrapy.Field()
+    parms_7 = scrapy.Field()

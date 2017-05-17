@@ -24,8 +24,9 @@ class ZolPipeline(object):
         
     def _conditional_insert(self, tx, item):
         tx.execute(
-            "insert into zolphone (title, price, product_url,published)"
-            " values (%s, %s, %s, %s)",
-            (item['title'],item['price'],item['p_url'],item['publish_time'])
+            "insert into zolphone (title, price, product_url,par_1,par_2,par_3,par_4,par_5,par_6,par_7)"
+            " values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+            (item['title'],item['price'],item['p_url'],item['parms_1'], item['parms_2'],
+            item['parms_3'], item['parms_4'], item['parms_5'], item['parms_6'], item['parms_2'])
             )
         log.msg("Item stored in db: %s" % item['title'], level=log.DEBUG)
